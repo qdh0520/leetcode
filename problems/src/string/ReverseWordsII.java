@@ -33,23 +33,23 @@ public class ReverseWordsII
         {
             char temp = s[i];
             s[i] = s[j];
-            s[j] = temp;
+            s[j] = temp;  // i从头出发，j从为尾出发
         }
         for(int i = 0, j = 0, l = s.length; i < l;)
         {
             if(s[i] == ' ')
             {
-                if(s[i - 1] == ' ')
+                if(s[i - 1] == ' ') //处理连续空格 j标记最后一个空格的位置
                 {
                     j = i;
                     i ++; j ++;
                 }
                 else
                 {
-                    i = i - 1;
+                    i = i - 1; // 回到空格前一个字符位置
                     for(int p = j, q = i; p < q; p ++, q--)
                     {
-                        char temp = s[p];
+                        char temp = s[p];  //p 到q 字母倒序
                         s[p] = s[q];
                         s[q] = temp;
                     }
@@ -66,7 +66,7 @@ public class ReverseWordsII
                     s[p] = s[q];
                     s[q] = temp;
                 }
-                j = i;
+                j = i;  //空格位置的处理
                 i ++; j ++;
             }
             else

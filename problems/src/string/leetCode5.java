@@ -57,5 +57,11 @@ public class leetCode5 {
 
 
     }
+
+    public static void main(String[] args) {
+        leetCode5 ex=new leetCode5();
+//        ex.longestPalindrome("abbc");
+        System.out.print( ex.longestPalindrome("abbc"));
+    }
 }
 

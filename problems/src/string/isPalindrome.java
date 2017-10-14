@@ -16,8 +16,24 @@ public class isPalindrome {
              return  isPalindrome(s.substring(1,s.length()-1));
      }
 
-    public static void main(String[] args) {
+
+     public static String check(String s){
+         int low=0 ;
+         int high=s.length()-1;
+         while (low<high) {
+             if (s.charAt(low) != s.charAt(high)) {
+                 return "no";
+             }
+                 high--;
+                 low++;
+         }
+           return "yes";
+     }
+
+
+     public static void main(String[] args) {
        System.out.println( isPalindrome("ab"));
-    }
+        System.out.println( isPalindrome("abcba"));
+     }
 
 }

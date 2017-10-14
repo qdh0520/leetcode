@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * Created by Administrator on 2017/6/5.
  *
- *
+ * 不连续的最长子串的长度
  * 输入abc 输出 3
  * 输入abcac 输出 3
  * 输入abcacabcde 输出 5
@@ -35,8 +35,8 @@ public class leetCode4 {
 
     public static void main(String[] args) {
         leetCode4 leet =new leetCode4();
-        leet.lengthOfLongestSubstring("abcacabcde");
-        System.out .println( leet.lengthOfLongestSubstring("abcacabcde"));
+//        leet.lengthOfLongestSubstring("abcacabcdefghjkl");
+        System.out .println( leet.lengthOfLongestSubstring("abcacabcdefghjklzx"));
 
 
 

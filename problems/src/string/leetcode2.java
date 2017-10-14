@@ -35,7 +35,7 @@ public class leetcode2 {
       int[] nums={2,7,11,15};
         leetcode2 leetcode2=new leetcode2();
        System.out.print(leetcode2.twoSum(nums,9)); //输出数组的地址
-        String intArrayString = Arrays.toString(leetcode2.twoSum(nums,9));
-        System.out.print(intArrayString); //输出数组的元素
+//        String intArrayString = Arrays.toString(leetcode2.twoSum(nums,9));
+//        System.out.print(intArrayString); //输出数组的元素
     }
 }

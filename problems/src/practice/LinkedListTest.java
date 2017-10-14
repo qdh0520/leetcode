@@ -35,6 +35,6 @@ public class LinkedListTest {
         for (String s : arrayList) {
             System.out.println("s = " + s);
         }
-        String[] array=arrayList.toArray(new String [0]);
+        String[] array=arrayList.toArray(new String [0] );
     }
 }

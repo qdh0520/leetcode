@@ -1,8 +1,4 @@
-package StrategyModel;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.io.Console;
+package DecorateModel;
 
 /**
  * Created by Administrator on 2017/6/22.
